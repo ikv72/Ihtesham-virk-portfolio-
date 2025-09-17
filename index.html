@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ihtesham Virk – Portfolio</title>
+  <style>
+    body {margin:0;font-family:system-ui, sans-serif;background:#0b1020;color:#e8ecf1;line-height:1.6}
+    header, footer {background:#121936;color:#b7c0d1;padding:1rem;text-align:center;position:sticky;top:0;z-index:10}
+    nav a {margin:0 1rem;color:#5eead4;text-decoration:none;font-weight:600}
+    nav a:hover {text-decoration:underline}
+    .container {max-width:1000px;margin:0 auto;padding:2rem}
+    .hero {text-align:center;padding:3rem 1rem}
+    .hero img {max-width:260px;border-radius:50%;box-shadow:0 4px 16px rgba(0,0,0,0.6)}
+    h1 {font-size:2.8rem;margin:1rem 0 0.5rem}
+    h2 {margin-top:3rem;color:#60a5fa;font-size:2rem}
+    .grid {display:grid;gap:1rem}
+    .skills {grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card {background:#0f1630;border:1px solid rgba(255,255,255,0.1);padding:1.2rem;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+    .card img {max-width:100%;border-radius:12px;margin-top:0.8rem}
+    .badge {display:inline-block;padding:0.3rem 0.7rem;border-radius:999px;background:#123;color:#5eead4;font-size:0.85rem;margin-bottom:0.5rem}
+    form {display:grid;gap:1rem;margin-top:1rem}
+    input,textarea {padding:0.8rem;border-radius:8px;border:1px solid #333;background:#121936;color:#fff}
+    button {padding:0.8rem;border:none;border-radius:8px;background:#60a5fa;color:#081226;font-weight:600;cursor:pointer}
+    button:hover {background:#3b82f6;color:#fff}
+    footer {margin-top:3rem}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#reflections">Reflections</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <img src="profile.jpg" alt="Profile photo of Ihtesham Virk" />
+      <h1>Ihtesham Virk</h1>
+      <p>Student at Ravensbourne University London</p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="grid skills">
+        <div class="card"><h3>Good Learner</h3><p>Willing to learn new things and adapt quickly.</p></div>
+        <div class="card"><h3>Motivate Yourself and Others</h3><p>Positive attitude and inspire others to achieve goals.</p></div>
+        <div class="card"><h3>Diversity</h3><p>Accustomed to working with different backgrounds and inclusive teams.</p></div>
+        <div class="card"><h3>Strong Communication</h3><p>Communicate confidently, clearly, and listen actively.</p></div>
+      </div>
+    </section>
+
+    <section id="reflections">
+      <h2>Reflections</h2>
+
+      <div class="card">
+        <span class="badge">SMART Reflection</span>
+        <h3>Improving my communication skills</h3>
+        <p><strong>Specific:</strong> Improve communication skills by group projects.</p>
+        <p><strong>Measurable:</strong> Get feedback from classmates.</p>
+        <p><strong>Achievable:</strong> Rehearse before presentations.</p>
+        <p><strong>Relevant:</strong> Essential for employability.</p>
+        <p><strong>Time-bound:</strong> Within this school year.</p>
+        <p><em>Outcome:</em> I became more confident in presenting publicly.</p>
+        <img src="smart.jpg" alt="Group discussion" />
+      </div>
+
+      <div class="card">
+        <span class="badge">STARR Reflection</span>
+        <h3>Coordinating a group project</h3>
+        <p><strong>Situation:</strong> It was hard for our group to synchronize tasks.</p>
+        <p><strong>Task:</strong> My role was to facilitate communication.</p>
+        <p><strong>Action:</strong> Organized check-ins and encouraged input.</p>
+        <p><strong>Result:</strong> We submitted the project successfully on time.</p>
+        <p><strong>Reflection:</strong> Learned importance of communication and leadership in diverse groups.</p>
+        <img src="starr.jpg" alt="Working on laptop" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="mailto:ihteshamv@gmail.com" method="post" enctype="text/plain">
+        <input name="name" placeholder="Your full name" required />
+        <input type="email" name="email" placeholder="your@email.com" required />
+        <textarea name="message" placeholder="Write your message…" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ihtesham Virk – Ravensbourne University London</p>
+  </footer>
+</body>
+</html>
